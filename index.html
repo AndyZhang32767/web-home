@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Andy之家</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="stage">
+      <section class="card" aria-labelledby="welcome">
+        <svg class="mark" viewBox="0 0 48 48" aria-hidden="true">
+          <path
+            d="M8 22.5 24 8l16 14.5"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.6"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M13 21.5V38h22V21.5"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.6"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M21 38V28h6v10"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.6"
+            stroke-linejoin="round"
+          />
+        </svg>
+        <h1 id="welcome">欢迎回到 Andy之家</h1>
+        <p class="lede"></p>
+
+        <form id="login-form" novalidate>
+          <label class="field">
+            <span>账户</span>
+            <input
+              id="account"
+              name="account"
+              type="text"
+              autocomplete="username"
+              placeholder="请输入账户"
+              required
+            />
+          </label>
+
+          <label class="field">
+            <span>密码</span>
+            <span class="password">
+              <input
+                id="password"
+                name="password"
+                type="password"
+                autocomplete="current-password"
+                placeholder="请输入密码"
+                required
+              />
+              <button
+                class="toggle"
+                type="button"
+                aria-label="显示密码"
+                aria-pressed="false"
+              >
+                显示
+              </button>
+            </span>
+          </label>
+
+          <p id="message" class="message" role="status" hidden></p>
+
+          <button class="submit" type="submit">登录</button>
+        </form>
+      </section>
+    </main>
+    <footer class="footer">
+      <a href="https://beian.miit.gov.cn/" target="_blank" rel="noopener noreferrer">粤ICP备2026145126号</a>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
