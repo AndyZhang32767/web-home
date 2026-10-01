@@ -24,5 +24,5 @@ form.addEventListener("submit", (event) => {
   }
 
   message.hidden = false;
-  message.textContent = "暂未添加任何账户，暂时无法登录。";
+  message.textContent = "账号或密码错误，请重新输入";
 });
